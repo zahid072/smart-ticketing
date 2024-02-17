@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="lg:min-w-[1280px]">
+<body class="lg:min-w-[1280px] md:min-w-[930px]">
     <!------------------ Header section ------------------>
     <header class="max-w-[1171px] lg:mx-auto mx-5 lg:mt-12 font-raleway">
         <nav class="navbar bg-base-100">
@@ -68,7 +68,7 @@
         <!-------------------- Banner section -------------------->
         <section>
             <div
-                class="banner-bg max-w-[1171px] h-[550px] relative rounded-3xl bg-center text-center text-white md:pt-16 p-6 lg:space-y-9 space-y-4">
+                class="banner-bg max-w-[1171px] h-[550px] relative rounded-3xl bg-center text-center text-white md:pt-16 p-6 lg:space-y-9 space-y-6">
 
                 <h1 class="md:text-6xl text-3xl font-bold md:font-extrabold">End-to-End Travel with </h1>
                 <h2 class="text-[#1DD100] text-3xl font-bold md:text-6xl md:font-extrabold">Alpha Paribahan</h2>
@@ -76,14 +76,14 @@
                     Paribahan. Purchase your tickets hassle-free and embark on your journey effortlessly.</p>
                 <div>
                     <a href="#buyTicket"
-                        class="px-5 py-3 cursor-pointer rounded-lg bg-[#1DD100] text-black text-xl font-semibold">Buy
+                        class="px-5 py-3 cursor-pointer rounded-lg bg-[#1DD100] hover:bg-[#32b229] text-black text-xl font-semibold">Buy
                         Ticket</a>
                 </div>
                 <div
                     class="-ml-5 absolute transition-all md:-bottom-12 -bottom-1/2 text-black w-full flex md:flex-row flex-col justify-center items-center gap-6">
                     <!-- card-1 -->
                     <div
-                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        class="flex items-center justify-center border border-[#22212121] hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-b-[#1DD100]">
                         <img src="./images/people.png" alt="">
                         <div>
                             <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
@@ -92,7 +92,7 @@
                     </div>
                     <!-- card-2 -->
                     <div
-                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        class="flex items-center w-64 border border-[#22212121] justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-b-[#1DD100]">
                         <img src="./images/ticket-cupon.png" alt="">
                         <div>
                             <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
@@ -101,7 +101,7 @@
                     </div>
                     <!-- card-3 -->
                     <div
-                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        class="flex items-center border border-[#22212121] justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-b-[#1DD100]">
                         <img src="./images/stoppage.png" alt="">
                         <div>
                             <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
@@ -114,8 +114,47 @@
             </div>
         </section>
         <!--------------- Offer section --------------->
-        <section>
+        <section class="lg:mt-32 md:mt-24 mt-80 text-center lg:space-y-12 space-y-7">
+            <h1 class="text-center md:text-4xl font-bold text-2xl">Best offers for you</h1>
+            <div class="flex md:flex-row flex-col gap-6">
+                <!------------------ card-1 ------------------>
+                <div class="md:w-1/2 w-full bg-[#FFBF0F] rounded-2xl flex">
+                    <div class="p-12 mr-12 space-y-4">
+                        <h1 class="text-4xl text-start font-extrabold">15% OFF</h1>
+                        <h4 class="font-bold "> on your next purchase</h4>
+                        <p class="">use by January 2024</p>
+                    </div>
+                    <div class="border-dashed border-r-2 mt-[35px] pb-5 relative h-[70%]">
+                        <div class="absolute rounded-full w-[3.25rem] h-[3.25rem] bg-white -ml-6 -top-[60px]"></div>
+                        <div class="absolute rounded-full w-[3.25rem] h-[3.25rem] bg-white -ml-6 -bottom-[60px]"></div>
+                    </div>
+                    <div class="py-16 px-12 space-y-4">
+                        <h1 class="text-3xl font-bold font-raleway ">NEW15</h1>
+                        <p>Coupon Code</p>
+                    </div>
 
+                </div>
+                <!------------------ card-2 ------------------>
+                <div class="md:w-1/2 w-full bg-[#F78C9C] rounded-2xl flex">
+                    <div class="p-12 mr-12 space-y-4">
+                        <h1 class="text-4xl text-start font-extrabold">20% OFF</h1>
+                        <h4 class="font-bold"> on your next purchase</h4>
+                        <p class="">use by January 2024</p>
+                    </div>
+                    <div class="border-dashed border-r-2 mt-[35px] pb-5 relative h-[70%]">
+                        <div class="absolute rounded-full w-[3.25rem] h-[3.25rem] bg-white -ml-6 -top-[60px]"></div>
+                        <div class="absolute rounded-full w-[3.25rem] h-[3.25rem] bg-white -ml-6 -bottom-[60px]"></div>
+                    </div>
+                    <div class="py-16 px-12 space-y-4">
+                        <h1 class="text-3xl font-bold ">Couple 20</h1>
+                        <p>Coupon Code</p>
+                    </div>
+
+                </div>
+            </div>
+            <button class="btn text-xl font-semibold font-raleway bg-white text-[#1DD100] border border-[#1dd10066]">
+                See All Offers
+            </button>
         </section>
         <!------------- Buy ticket section ------------->
         <section id="buyTicket">
