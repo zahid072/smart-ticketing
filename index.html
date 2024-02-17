@@ -7,11 +7,27 @@
     <title>Smart Ticketing</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!------------ Custom style ------------>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .banner-bg {
+            background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(./images/banner.png), lightgray 50% / cover no-repeat;
+        }
+    </style>
 </head>
 
 <body class="lg:min-w-[1280px]">
     <!------------------ Header section ------------------>
-    <header class="max-w-[1171px] lg:mx-auto mx-5 lg:mt-12">
+    <header class="max-w-[1171px] lg:mx-auto mx-5 lg:mt-12 font-raleway">
         <nav class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -48,15 +64,66 @@
         </nav>
     </header>
     <!---------------Main section  --------------->
-    <main class="max-w-[1171px] lg:mx-auto mx-5">
+    <main class="max-w-[1171px] lg:mx-auto mx-5 mt-5 font-inter">
+        <!-------------------- Banner section -------------------->
+        <section>
+            <div
+                class="banner-bg max-w-[1171px] h-[550px] relative rounded-3xl bg-center text-center text-white md:pt-16 p-6 lg:space-y-9 space-y-4">
 
+                <h1 class="md:text-6xl text-3xl font-bold md:font-extrabold">End-to-End Travel with </h1>
+                <h2 class="text-[#1DD100] text-3xl font-bold md:text-6xl md:font-extrabold">Alpha Paribahan</h2>
+                <p class="max-w-2xl mx-auto md:text-[18px] md:leading-8">Experience seamless travel booking with Alpha
+                    Paribahan. Purchase your tickets hassle-free and embark on your journey effortlessly.</p>
+                <div>
+                    <a href="#buyTicket"
+                        class="px-5 py-3 cursor-pointer rounded-lg bg-[#1DD100] text-black text-xl font-semibold">Buy
+                        Ticket</a>
+                </div>
+                <div
+                    class="-ml-5 absolute transition-all md:-bottom-12 -bottom-1/2 text-black w-full flex md:flex-row flex-col justify-center items-center gap-6">
+                    <!-- card-1 -->
+                    <div
+                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        <img src="./images/people.png" alt="">
+                        <div>
+                            <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
+                            <p>Registered users</p>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div
+                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        <img src="./images/ticket-cupon.png" alt="">
+                        <div>
+                            <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
+                            <p>Ticket sold</p>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div
+                        class="flex items-center justify-center hover:shadow-lg gap-3 p-7 bg-white rounded-2xl border-b-[3px] border-[#1DD100]">
+                        <img src="./images/stoppage.png" alt="">
+                        <div>
+                            <h1 class="md:text-4xl text-2xl font-semibold md:font-bold">500k+</h1>
+                            <p>Registered users</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--------------- Offer section --------------->
+        <section>
+
+        </section>
+        <!------------- Buy ticket section ------------->
+        <section id="buyTicket">
+
+        </section>
     </main>
+    <!------------------ Footer section ------------------>
     <footer>
-        <style>
-            color {
-                color: #1dd1001a;
-            }
-        </style>
     </footer>
     <script src="scriptJs/script.js"></script>
     <script src="scriptJs/index.js"></script>
