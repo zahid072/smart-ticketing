@@ -199,7 +199,7 @@
                         </div>
 
                     </div>
-                    <div class="flex md:w-[25%] w-full">
+                    <div class="flex md:w-[25%] w-full  md:pb-0 pb-5">
                         <img class="max-[767px]:hidden" src="./images/info-devider.png" alt="">
                         <div class="flex items-center mx-auto">
                             <div class="text-center space-y-4">
@@ -212,8 +212,8 @@
 
                 </section>
                 <!---------------------- select seat section ---------------------->
-                <section class="flex md:flex-row p-8 flex-col bg-white rounded-2xl">
-                    <div class="md:w-3/5 w-full md:border-r-[3px] text-[#03071280] pr-8 border-dashed">
+                <section class="flex md:flex-row p-8 flex-col md:gap-0 gap-5 bg-white rounded-2xl">
+                    <div class="md:w-3/5 w-full md:border-r-[3px] text-[#03071280] md:pr-8 border-dashed">
                         <div class="">
                             <div class=" py-4 border-b-2 border-dashed ">
                                 <h1 class="text-xl font-semibold text-black">Select Your Seat</h1>
@@ -226,23 +226,170 @@
                                         src="./images/seat-green-filled.png" alt=""> Selected</h1>
                             </div>
                             <div class="flex justify-end mt-5">
-                                <p class="bg-[#0307120d] py-2 px-6 rounded-lg text-end"><img
+                                <p class="bg-[#0307121a] py-2 px-6 rounded-lg text-end"><img
                                         src="./images/tabler-icon-steering-wheel.png" alt=""></p>
                             </div>
                         </div>
+                        <!-- all seats -->
+                        <div class="flex gap-4 mt-6">
+                            <div class="flex flex-col gap-11 mt-[10px] items-center">
+                                <p>A</p>
+                                <p>B</p>
+                                <p>C</p>
+                                <p>D</p>
+                                <p>E</p>
+                                <p>F</p>
+                                <p>G</p>
+                                <p>H</p>
+                                <p>I</p>
+                                <p>J</p>
+                            </div>
+                            <div class="flex gap-12 md:gap-16 w-full">
+                                <!-- Left side seats -->
+                                <div class="flex gap-7 w-full">
+                                    <div class="flex flex-col gap-5 w-full">
+                                        <button class="btn">A1</button>
+                                        <button class="btn">B1</button>
+                                        <button class="btn">C1</button>
+                                        <button class="btn">D1</button>
+                                        <button class="btn">E1</button>
+                                        <button class="btn">F1</button>
+                                        <button class="btn">G1</button>
+                                        <button class="btn">H1</button>
+                                        <button class="btn">I1</button>
+                                        <button class="btn">J1</button>
+                                    </div>
+                                    <div class="flex flex-col gap-5 w-full">
+                                        <button class="btn">A2</button>
+                                        <button class="btn">B2</button>
+                                        <button class="btn">C2</button>
+                                        <button class="btn">D2</button>
+                                        <button class="btn">E2</button>
+                                        <button class="btn">F2</button>
+                                        <button class="btn">G2</button>
+                                        <button class="btn">H2</button>
+                                        <button class="btn">I2</button>
+                                        <button class="btn">J2</button>
+                                    </div>
+                                </div>
+                                <!-- Right side seats -->
+                                <div class="flex gap-7 w-full">
+                                    <div class="flex flex-col gap-5 w-full">
+                                        <button class="btn">A3</button>
+                                        <button class="btn">B3</button>
+                                        <button class="btn">C3</button>
+                                        <button class="btn">D3</button>
+                                        <button class="btn">E3</button>
+                                        <button class="btn">F3</button>
+                                        <button class="btn">G3</button>
+                                        <button class="btn">H3</button>
+                                        <button class="btn">I3</button>
+                                        <button class="btn">J3</button>
+                                    </div>
+                                    <div class="flex flex-col gap-5 w-full">
+                                        <button class="btn">A4</button>
+                                        <button class="btn">B4</button>
+                                        <button class="btn">C4</button>
+                                        <button class="btn">D4</button>
+                                        <button class="btn">E4</button>
+                                        <button class="btn">F4</button>
+                                        <button class="btn">G4</button>
+                                        <button class="btn">H4</button>
+                                        <button class="btn">I4</button>
+                                        <button class="btn">J4</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:w-2/5 w-full pl-8">
-                        <div class=" py-4 border-b-2 border-dashed ">
+                    <!-- Price section -->
+                    <div class="md:w-2/5 w-full md:ml-8">
+                        <div class=" py-4 mb-5 border-b-2 border-dashed ">
                             <h1 class="text-xl font-semibold">Select Your Seat</h1>
+                        </div>
 
+                        <div class="p-7 bg-[#F7F8F8] rounded-xl">
+                            <div class=" py-3 border-b-2 border-dashed ">
+                                <ul class="flex font-semibold justify-between">
+                                    <li>Seat <span
+                                            class="bg-green-400 p-1 rounded-full text-white font-semibold">0</span></li>
+                                    <li>Class</li>
+                                    <li>Price</li>
+                                </ul>
+                            </div>
+                            <div id="" class=" border-b-2 text-[#03071280]">
+                                <ul class="flex py-3 justify-between">
+                                    <li>C2</li>
+                                    <li>Economy</li>
+                                    <li>550</li>
+                                </ul>
+                            </div>
+                            <ul class="flex py-3 font-semibold justify-between">
+                                <li>Total Price</li>
+                                <li>BDT <span>0</span></li>
+                            </ul>
+                            <div class=" flex p-2 rounded-lg bg-white">
+                                <input class=" w-full outline-none bg-transparent px-3 py-0"
+                                    placeholder="Have any coupon?" type="text">
+                                <button
+                                    class="py-2 px-4 bg-[#1DD100] rounded-lg text-white font-semibold">Apply</button>
+                            </div>
+                            <ul class="flex py-3 font-semibold justify-between">
+                                <li>Grand Total</li>
+                                <li>BDT <span>0</span></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="mt-6">
+                            <form action="">
+                                <label for="name" class="font-semibold">Passenger Name*</label>
+                                <input class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                    placeholder="Enter your name" type="text">
+                                <label for="name" class="font-semibold">Phone Number*</label>
+                                <input class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                    placeholder="Enter your phone number" type="number">
+                                <label for="name" class="font-semibold">Email ID</label>
+                                <input class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                    placeholder="Enter your email id" type="email">
+                                <button
+                                    class="py-3 w-full px-4 bg-[#1DD100] rounded-lg text-white font-semibold">Next</button>
+                            </form>
+                            <ul class="flex text-center gap-10 mt-5 text-[#03071280] font-semibold ">
+                                <li class="underline cursor-pointer">Terms and Conditions</li>
+                                <li class="underline cursor-pointer">Cancellation Policy</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
+
             </div>
         </section>
     </main>
     <!------------------ Footer section ------------------>
-    <footer>
+    <footer class="bg-black p-8 lg:p-32">
+        <div
+            class="flex md:flex-row flex-col md:gap-0 gap-5 justify-between border-b-2 border-dashed border-[#515050a5] text-white md:pb-14 pb-8">
+            <div>
+                <h1 class="text-4xl font-bold mb-8">P-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div>
+                <h1 class="text-xl font-semibold">Download our app</h1>
+                <div class="flex gap-3 items-center border p-1 px-2 rounded-lg mt-3">
+                    <img src="./images/playstore.png" class="h-12" alt="">
+                    <p>get in on <br> <span class="text-2xl font-semibold">Google Play</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col md:gap-0 gap-5 justify-between mt-6 text-white">
+            <p class="text-[#ffffff7e]">@all rights reserved, P-Ticket services limited.2024</p>
+            <ul class="flex gap-5">
+                <li>Terms & condition</li>
+                <li>Return & refund policy</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
     </footer>
     <script src="scriptJs/script.js"></script>
     <script src="scriptJs/index.js"></script>
