@@ -42,7 +42,7 @@ function setDiscount(container) {
     const grandTotalDiscount = (priceNumber * 15) / 100;
     const grandTotal = grandPriceNumber - grandTotalDiscount;
     grandPrice.innerText = grandTotal;
-    discountTotal.innerText = `BDT ${grandTotalDiscount}`;
+    discountTotal.innerText = `Discount: BDT ${grandTotalDiscount}`;
     container.classList.add("hidden");
   } else if (couponInput.value === "Couple 20") {
     const grandTotalDiscount = (priceNumber * 20) / 100;
@@ -54,4 +54,19 @@ function setDiscount(container) {
     alert("invalid coupon");
   }
   couponInput.value = "";
+}
+// --------------Show modal-----------
+function showModal(){
+    const nameInput = document.getElementById("nameInput");
+  const emailInput = document.getElementById("emailInput");
+  const phoneInput = document.getElementById("phoneInput");
+  const modal = document.getElementById("modal");
+  if (setCounter > 0 && phoneInput.value > 10) {
+    phoneInput.value = "";
+    nameInput.value = "";
+    emailInput.value = "";
+    modal.style.display = "block";
+  } else {
+    alert("Select seats and enter your phone number");
+  }
 }

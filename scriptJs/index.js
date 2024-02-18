@@ -10,19 +10,19 @@ for (let seat of allSeats) {
     if (selectSeat.includes(seatName)) {
       alert("This seat is already selected.");
     } else {
-      if (selectSeat.length <= 4) {
-        selectSeat.push(seatName);
-      }
-      if (selectSeat.length <= 4) {
+      if (setCounter < 4) {
         setCounter++;
+        selectSeat.push(seatName);
         availableSeatCounter("seatsLeft");
         setSeatInfo(seatName);
         totalPrice("totalPrice", "grandTotal", ticketPrice);
-        setBgColor(seatName);
       }
       document.getElementById("seatCount").innerText = setCounter;
 
       console.log(selectSeat);
+    }
+    for (let clickedSeat of selectSeat) {
+      setBgColor(clickedSeat);
     }
 
     if (setCounter >= 3) {
@@ -43,3 +43,11 @@ function buyTicket() {
   const buyTicketSection = document.getElementById("buyTicket");
   buyTicketSection.scrollIntoView({ behavior: "smooth" });
 }
+// --------------Modal function-------------
+function nextBtn() {
+    showModal();
+}
+document.getElementById("continueBtn").addEventListener("click", function () {
+  modal.style.display = "none";
+  location.reload();
+});
