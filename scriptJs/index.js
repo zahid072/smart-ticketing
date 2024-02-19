@@ -21,6 +21,8 @@ for (let seat of allSeats) {
         availableSeatCounter("seatsLeft");
         setSeatInfo(seatName);
         totalPrice("totalPrice", "grandTotal", ticketPrice);
+      } else {
+        alert("You can only select up to 4 seats.");
       }
       document.getElementById("seatCount").innerText = setCounter;
       console.log(selectSeat);
