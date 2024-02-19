@@ -1,7 +1,11 @@
-// set seat btn background color 
+// set seat btn background color
 function setBgColor(seatId) {
   const seat = document.getElementById(seatId);
   seat.style.backgroundColor = "#1DD100";
+}
+function setBgColorTotalSeat(seatId) {
+  const seat = document.getElementById(seatId);
+  seat.style.backgroundColor = "#d6b94e";
 }
 // add seat info
 function setSeatInfo(name) {
@@ -39,12 +43,14 @@ function setDiscount(container) {
   const grandPriceNumber = parseInt(grandPrice.innerText);
   const priceNumber = parseInt(price.innerText);
   if (couponInput.value === "NEW15") {
+    //set 20% discount
     const grandTotalDiscount = (priceNumber * 15) / 100;
     const grandTotal = grandPriceNumber - grandTotalDiscount;
     grandPrice.innerText = grandTotal;
     discountTotal.innerText = `Discount: BDT ${grandTotalDiscount}`;
     container.classList.add("hidden");
   } else if (couponInput.value === "Couple 20") {
+    //set 20% discount
     const grandTotalDiscount = (priceNumber * 20) / 100;
     const grandTotal = grandPriceNumber - grandTotalDiscount;
     grandPrice.innerText = grandTotal;
@@ -55,18 +61,29 @@ function setDiscount(container) {
   }
   couponInput.value = "";
 }
+// reset function
+function resetPrice() {
+  document.getElementById("grandTotal").innerText = 0;
+  document.getElementById("totalPrice").innerText = 0;
+  document.getElementById("discountPrice").innerText = "";
+  document.getElementById("seatCount").innerText = 0;
+  document.getElementById("couponContainer").classList.remove("hidden");
+  document.getElementById("seatInfo").innerHTML = "";
+}
 // --------------Show modal-----------
-function showModal(){
-    const nameInput = document.getElementById("nameInput");
+function showModal() {
+  const nameInput = document.getElementById("nameInput");
   const emailInput = document.getElementById("emailInput");
   const phoneInput = document.getElementById("phoneInput");
   const modal = document.getElementById("modal");
-  if (setCounter > 0 && phoneInput.value > 10) {
+  if (setCounter > 0 && phoneInput.value > 0) {
     phoneInput.value = "";
     nameInput.value = "";
     emailInput.value = "";
     modal.style.display = "block";
+    resetPrice();
+    document.getElementById("applyBtn").setAttribute("disabled", "disabled");
   } else {
-    alert("Select seats and enter your phone number");
+    alert("Please select seats and enter your phone number");
   }
 }

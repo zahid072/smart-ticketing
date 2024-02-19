@@ -297,8 +297,7 @@
                         <div class="p-7 bg-[#F7F8F8] rounded-xl">
                             <div class=" py-3 border-b-2 border-dashed ">
                                 <ul class="flex font-semibold justify-between">
-                                    <li>Seat <span
-                                            id="seatCount"
+                                    <li>Seat <span id="seatCount"
                                             class="bg-green-400 p-1 rounded-full text-white font-semibold">0</span></li>
                                     <li class="-ml-11">Class</li>
                                     <li>Price</li>
@@ -327,13 +326,16 @@
                         <div class="mt-6">
                             <div>
                                 <label for="name" class="font-semibold">Passenger Name*</label>
-                                <input id="nameInput" class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                <input id="nameInput"
+                                    class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
                                     placeholder="Enter your name" type="text">
                                 <label for="name" class="font-semibold">Phone Number*</label>
-                                <input id="phoneInput" class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                <input id="phoneInput"
+                                    class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
                                     placeholder="Enter your phone number" type="number">
                                 <label for="name" class="font-semibold">Email ID</label>
-                                <input id="emailInput" class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
+                                <input id="emailInput"
+                                    class=" w-full p-4 font-semibold rounded-lg mb-5 mt-3 border-2 outline-none"
                                     placeholder="Enter your email id" type="email">
                                 <button onclick="nextBtn()"
                                     class="py-3 w-full px-4 bg-[#1DD100] rounded-lg text-white font-semibold">Next</button>
@@ -349,18 +351,20 @@
             </div>
         </section>
         <!---------------------- Modal ---------------------->
-        <section id="modal" class=" hidden transition w-full h-svh fixed top-0 bottom-0 bg-[#0000007a]">
-            <div class="text-center md:py-10 md:px-14 px-8 py-5 bg-white md:w-[550px] w-[425px] mt-[10%] space-y-5 mx-auto rounded-2xl">
-              <img class="mx-auto block" src="./Images/success.png" alt="">
-              <h1 class="text-3xl text-[#1DD100] font-semibold">SUCCESS</h1>
-              <div>
-                <p class="font-semibold">Thank you for Booking Our Bus Seats. 
-                    We are working hard to find the best service and deals for you. </p>
-                <p class="text-gray-400"> Shortly you will find a confirmation in your email.</p>
-              </div>
-              <button id="continueBtn" class="py-2 hover:bg-[#1DD100] px-4 bg-[#27AE60] rounded-lg text-white font-semibold">Continue</button>
+        <section id="modal" class=" hidden transition w-full h-full fixed top-0 bottom-0 bg-[#0000007a]">
+            <div
+                class="text-center md:py-10 md:px-14 px-8 py-5 bg-white md:w-[550px] w-[400px] mt-[10%] space-y-5 mx-auto rounded-2xl">
+                <img class="mx-auto block" src="./Images/success.png" alt="">
+                <h1 class="text-3xl text-[#1DD100] font-semibold">SUCCESS</h1>
+                <div>
+                    <p class="font-semibold">Thank you for Booking Our Bus Seats.
+                        We are working hard to find the best service and deals for you. </p>
+                    <p class="text-gray-400"> Shortly you will find a confirmation in your email.</p>
+                </div>
+                <button id="continueBtn"
+                    class="py-2 hover:bg-[#1DD100] px-4 bg-[#27AE60] rounded-lg text-white font-semibold">Continue</button>
             </div>
-          </section>
+        </section>
     </main>
     <!------------------ Footer section ------------------>
     <footer class="bg-black p-8 lg:p-32">
